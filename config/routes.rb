@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :client_workouts
   root 'client_workouts#index'
+
+  post 'client_workouts/find(.:format)' => 'client_workouts#find'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

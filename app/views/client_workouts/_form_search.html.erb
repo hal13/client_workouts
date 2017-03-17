@@ -1,4 +1,6 @@
-<%= form_tag("/client_workout/find") do %>
+<%= form_tag("/client_workouts/find") do %>
+  <%= label_tag 'Client Name or Trainer' %>
+
   <%= text_field_tag :search_string %>
   <%= submit_tag "Search" %>
 <% end %>
